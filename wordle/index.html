@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  
+  <body>
+    <!--Title and Navbar-->
+    <div class="header">
+      <div class="center-nav">
+        <h1><strong>Wordle</strong></h1>
+      </div>
+
+      <div class="right-nav">
+        <label id="btn1" class="btn1_">&#9681;</label>
+        <label id="btn2" class="btn2_">&#63;</label>
+        <label id="btn3" class="btn3_">&#9432;</label>
+      </div>
+    </div>
+    <hr>
+    
+    <div id="body">
+      <!--Game-->
+      <div id="game-stuff">
+        <div id="game"></div>
+        <!--Win Image-->
+        <div id="win"><img src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif" alt="Image"></div>
+        <label id="start">Start Over</label>
+      </div>
+      <!--Instructions-->
+      <div id="instructions" class="hidden">
+      <h2>How to Play:</h2>
+
+      <ul>
+        <li>Begin by typing some letters on your keyboard as your guess.</li>
+        <li>Press <i>BACKSPACE</i> to remove letters.</li>
+        <li>Press <i>ENTER/RETURN</i> to submit an answer.</li>
+        <li>Letters in the right position to the answer are in <b>green</b>.</li>
+        <li>Letters that exist in the word but are in the wrong spot are in <b>yellow</b>.</li>
+        <li>Letters that aren't in the word are in <b>grey</b>.</li>
+        <li>You have only 4 guesses. Good luck!</li>
+      </ul>
+      <h2>Additional Information:</h2>
+      <ul>
+        <li>Need a hint? Click the <strong>&#63;</strong> icon.</li>
+        <li>If dark mode is easier on the eye, click the <strong>&#9681;</strong> icon.</li>
+      </ul>
+      </div>
+    </div>
+
+    <!--Display Line-->
+    <div id="show" class="hidden"></div>
+  
+    <!--Footer-->
+    <footer class="footer">
+      <p>&#169;Wordle by Caleb Oviawe</p>
+    </footer>
+    
+    <script src="./wordle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+  width: 400px;
+  border: 1.66px solid #57575b;
+  padding-bottom: -10px;
+}
+
+/*Running the Game Stuff*/
+#game {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #3a3a3c;
+  margin: 4px;
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+
+.box.empty {
+  background-color: #57575b;
+  color: white;
+}
+
+.box.wrong {
+  background-color: #b59f3b;
+  color: white;
+}
+
+.box.right {
+  background-color: #538d4e;
+  color: white;
+}
+/**/
+
+/*Navbar Stuff*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  margin: 0;
+}
+
+.center-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: large;
+  padding-left: 333px;
+}
+
+.right-nav{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-left: 200px;
+}
+
+.btn1_{
+  background-color: white;
+  border: none; 
+  border-radius: 5px;
+  color: black; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.btn2_{
+  background-color: white;
+  border: none; 
+  border-radius: 5px;
+  color: black; 
+  padding: 14px 18px; 
+  font-size: 20px; 
+  cursor: pointer; 
+}
+
+.btn3_{
+  background-color: white;
+  border: none; 
+  border-radius: 5px;
+  color: black; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.btn1_:hover{
+  background-color: #afb4af;
+  color: black;
+}
+.btn2_:hover{
+  background-color: #afb4af;
+  color: black;
+}
+.btn3_:hover{
+  background-color: #afb4af;
+  color: black;
+}
+/**/
+
+/*Dark Mode*/
+.dark-mode {
+  background-color: #121213;
+  color: white;
+}
+/**/
+
+/*Extra CSS for some HTML elements*/
+#body{
+  display: flex;
+  flex-direction: row;
+}
+
+#game-stuff{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+/**/
+
+/*Instructions and Statement Stuff*/
+#instructions{
+  margin: 2%;
+  padding: 3%;
+  border-left: 2px dotted #57575b;
+  width: 50%;
+  height: 80%;
+  flex: 0, 0, 50%;
+}
+
+#instructions ul{
+  font-size: 12.4px;
+  list-style-type: circle;
+}
+#instructions li{
+  padding: 2%
+}
+
+.hidden{
+  display: none;
+}
+
+#show{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #807b7b;
+  color: black;
+}
+
+.fail{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #f70404 !important;
+  color: white !important;
+}
+.hint{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #807b7b !important;
+  color: black !important;
+}
+
+.success{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #538d4e !important;
+  color: white !important;
+}
+/**/
+
+/*Win Display*/
+#win{
+  display: none;
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+/**/
+
+/*Start Over Button*/
+#start{
+  background-color: #538d4e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#start:hover {
+  background-color: rgb(102, 202, 102);
+  color: rgb(239, 232, 232);
+}
+/**/
+
+/*Footer*/
+.footer {
+  text-align: center;
+  border-top: rgb(44, 42, 42) 1px solid;
+  color: rgb(105, 100, 100);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+/**/
+
+
+/*Box Animation*/
+.animated {
+  animation: flip 0.5s ease;
+}
+
+@keyframes flip{
+  0%{
+    transform: scaleY(1); 
+  }
+  50%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+
+}
+/**/
